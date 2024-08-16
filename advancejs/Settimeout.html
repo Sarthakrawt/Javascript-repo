@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const funct = function(){
+        console.log('hello')
+    }
+    const changetext= function(){
+        document.querySelector('h1').innerHTML = `best js Series`
+    } 
+     // setTimeout is afunction used to set a time when we want to print the result in which interval or time 
+     //  and time interval is in milliseconds 
+
+    const timeout = setTimeout(changetext,1000)
+    //clearTimeout it will stop the settimeout function
+   
+   const Stop = document.querySelector('#stop');
+   Stop.addEventListener('click',()=>
+   {
+     clearTimeout(timeout)
+     console.log('stopped')
+   });
+</script> 
+</html>
