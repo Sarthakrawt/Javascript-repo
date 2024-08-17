@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class ="bg-black">
+        <h1 id="heading">DOM learning on Chai aur code</h1>
+    </div>
+</body>
+<script>
+       // document is an obeject inside 
+       // window is an object which is like whole window screen 
+       // document is just html file 
+       document.getElementById('heading').innerHTML = "<h1>hello</h1>"
+       //getElementById methord is used for target the id of the element in html
+       console.log(document.getElementById('heading').id)
+       console.log(document.getElementById('heading').className)
+       console.log(document.getElementById('heading').getAttribute('id'));
+       console.log(document.getElementById('heading').setAttribute('id','test heading'));
+        document.querySelector('#heading'); //#use for id and . use or class 
+</script>
+</html>
