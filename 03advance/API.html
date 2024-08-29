@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: grey ;">
+    
+</body >
+<script>
+    // response send and response  form the api 
+    // old method XMLHttpRequest 
+        const Url = "https://api.github.com/users/Sarthakrawt"; 
+    const xhr = new XMLHttpRequest();
+    // make a new object XMLHttpRequest() then you can use some method for send request and for response 
+
+    //sending a request
+    xhr.open("GET",Url);
+
+    //monitoring all the states
+    console.log(xhr.readyState);
+    // all the states are change when we send request using readyState you can check
+    // onreadystatechange continueously check the states 
+    xhr.onreadystatechange = ()=>{
+        console.log(xhr.readyState);
+        if(xhr.readyState == 4){
+            // for get the data from api 
+            //const data = JSON.parse(this.responseText);
+            // console.log(data.follow) and call any properties  
+            // JSON is just for is a stringify version of object usig parse poroperty you can convert this string to object 
+             const data = JSON.parse(xhr.responseText);
+             console.log(data);
+             console.log(data.followers)
+             // responseText property give you the full api values
+        }
+    }
+    //call 
+    // open has been called using send method
+    xhr.send();
+</script>
+</html>
