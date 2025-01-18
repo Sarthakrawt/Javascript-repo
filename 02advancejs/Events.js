@@ -12,7 +12,7 @@
 // button.addEventListener('click', (e)=>{
 //    console.log(`hello`);
 // }, false)
-// //flase which is defalt value is the event prapogation
+// //flase which is default value is the event propogation
 // //which is like a bubbling
 
 // // event (e) study more about its feature
