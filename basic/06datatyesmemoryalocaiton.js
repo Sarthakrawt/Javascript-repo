@@ -49,5 +49,5 @@ console.log(obj.mail);//"sart1243@gmial.com
 // why becuase when we assign obj and it properties the obj is in stack memory 
 // but the values are in heap memory 
 //so when we assign a copy of the object we are giving the reference to the variable
-// so when we change the value using obje2 then it will automatically change the values in heap memory
+// so when we change the value using obje2 then it will automatically change the values in heap memory which is reference to
 
