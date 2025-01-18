@@ -1,3 +1,4 @@
+// chaining using high order function 
 let Nums = [1,4,5,23,434,54];
 let newNums = Nums.map((num)=> num+10)
                   .map((num)=> num+1)
