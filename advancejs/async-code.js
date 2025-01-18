@@ -1,6 +1,6 @@
 // javascript is synchronous line by line code excecution and single threaded .
 // Execution context
-//excute one line of code at a time 
+//execute one line of code at a time 
 // ex -> console.log(1)
 // console.log(2)
 // call stack memory Heap
