@@ -1,10 +1,14 @@
 // javascript execution context
 // javascript is single threaded
+
+// execution phase
+// 1. Execution Context (Context)
+//An Execution Context is the environment in which 
+//JavaScript code is executed. It determines how functions and variables are accessible during execution.
+//type of execution context
 //global execution context
 // function execution context
 //eval execution context`
-//memory creation phase
-// execution phase
 let val1 = 12;
 let val2 = 13;
 function addNum(num1, num2){
@@ -13,6 +17,21 @@ function addNum(num1, num2){
 }
 let result1 = addNum(val1, val2);
 let result2 = addNum(1,3);
+// 2. Phases in JavaScript
+//A Phase refers to a stage in the execution process.
+
+/* Two Major Phases in Execution
+1️⃣ Creation Phase (Memory Allocation)
+
+The JavaScript engine allocates memory for variables and functions.
+Variables declared with var are initialized with undefined.
+Functions are hoisted (moved to the top).
+2️⃣ Execution Phase (Code Execution)
+
+The JavaScript engine executes the code line by line.
+Variables get assigned values.
+Function calls are executed.*/
+//memory creation phase
 // in this source code first 
 // creation phase will happen mean memory will allocate from top to bottom line by line 
 /* let val1 = undefined , val2 = undefined 
